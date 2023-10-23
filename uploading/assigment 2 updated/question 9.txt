@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+void swapping(int num1,int num2){
+    printf("before swapping first number = %d and second number = %d \n",num1,num2);
+    int swap;
+    swap = num1;
+    num1 = num2;
+    num2 = swap;
+    printf("after swapping first number = %d and second number = %d \n",num1,num2);
+}
+int main()
+{
+    //q9
+    int n1,n2;
+    printf("enter the numbers : ");
+    scanf("%d %d",&n1,&n2);
+    swapping(n1,n2);
+
+    return 0;
+}

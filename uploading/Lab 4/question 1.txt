@@ -1,0 +1,15 @@
+int arr[3][4];
+    for(int i=0 ; i<3 ; i++){
+        printf("enter the items of row number %d : ",i+1);
+        for(int j=0 ; j<4 ; j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    for(int i=0 ; i<3 ; i++){
+        int average = 0;
+        for(int j=0 ; j<4 ; j++){
+            average+= arr[i][j];
+        }
+    average/= 4;
+    printf("the average of row number %d is = %d \n",i+1,average);
+}

@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+int calculateheating(int number){
+    if(number >=0 && number <=30){
+       return 7;
+    }else if(number >30 && number <= 60){
+        return 5;
+    }else if(number >60 && number <=90){
+        return 3;
+    }else if(number >90 && number <=100){
+        return 1;
+    }else{
+        return 0;
+    }
+}
+int main()
+{
+    //q12
+    int n;
+    printf("enter the number : ");
+    scanf("%d",&n);
+    int result = calculateheating(n);
+    printf("%d \n",result);
+
+    return 0;
+}

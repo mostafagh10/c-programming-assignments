@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //q2
+    char name[20];
+    int grade;
+    printf("enter your name : ");
+    scanf("%s",&name);
+    printf("enter your grade : ");
+    scanf("%d",&grade);
+    printf("your name is : %s \n",name);
+    printf("your grade is : %d \n",grade);
+
+
+
+    return 0;
+}

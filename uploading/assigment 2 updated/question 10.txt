@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+int counthole(int number){
+    int hole=0;
+    while(number!= 0){
+    int s = number%10;
+    if(s == 0 || s == 4 || s == 6 || s == 9){
+        hole+= 1;
+    }else if(s == 8){
+        hole+= 2;
+    }else{
+        hole+= 0;
+    }
+    number/= 10;
+    }
+    return hole;
+}
+int main()
+{
+    //q10
+    int x;
+    printf("enter the number : ");
+    scanf("%d",&x);
+    int result = counthole(x);
+    printf("the number of holes = %d \n",result);
+
+    return 0;
+}

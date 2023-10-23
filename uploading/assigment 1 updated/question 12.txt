@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //q12
+    int x;
+    printf("enter positive integer : ");
+    scanf("%d",&x);
+    if(x <= 0){
+        printf("this is negative number or zero not positive number !");
+    }else{
+        int factorial = 1;
+        for(int i=x ; i>=1 ; i--){
+            factorial*= i;
+        }
+        printf("the factorial is = %d \n",factorial);
+    }
+
+
+
+    return 0;
+}

@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //q15
+    int number , power;
+    printf("enter the number : ");
+    scanf("%d",&number);
+    printf("enter the power : ");
+    scanf("%d",&power);
+    int result=number;
+    for(int i=2 ; i<=power ; i++){
+        result*= number;
+    }
+    printf("the power = %d \n",result);
+
+
+
+    return 0;
+}

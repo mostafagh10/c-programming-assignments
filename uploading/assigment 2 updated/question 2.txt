@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+int checkchar(char s){
+    if( (s>='a' && s<='z') || (s>='A' && s<='Z')){
+       return 1;
+    }else{
+       return 0;
+    }
+}
+int main()
+{
+    //q2
+    char c;
+    printf("Enter a character: ");
+    scanf("%c",&c);
+    int s = checkchar(c);
+    if(s == 1){
+       printf("%c is an alphabet. \n",c);
+    }else{
+       printf("%c is not an alphabet. \n",c);
+    }
+
+    return 0;
+}

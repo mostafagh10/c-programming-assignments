@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+int checkmultiplication(int n1,int n2){
+    if(n1 % n2 == 0){
+        return 1;
+    }else{
+        return 0;
+    }
+}
+int main()
+{
+    //q7
+    int num1,num2;
+    printf("enter the numbers : ");
+    scanf("%d %d",&num1,&num2);
+    int result = checkmultiplication(num1,num2);
+    if(result == 1){
+        printf("number %d is multiple of number %d \n",num1,num2);
+    }else{
+        printf("number %d is not multiple of number %d \n",num1,num2);
+    }
+
+    return 0;
+}

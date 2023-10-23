@@ -1,0 +1,26 @@
+ char x[20];
+    printf("enter the string : ");
+    gets(x);
+    int count=0;
+    int flag=0;
+    for(int i=0 ; i<20 && flag!= 1 ; i++){
+        if(x[i]!= '\0'){
+            count++;
+        }else{
+            flag = 1;
+        }
+    }
+    char arr[count];
+    for(int i=0 ; i<count ; i++){
+        arr[i] = x[i];
+    }
+    for(int i=0 ; i<count ; i++){
+        int s = (int)arr[i];
+        if((s>=97 && s<=122)){
+            s = s-32;
+            printf("%c",(char)s);
+        }else{
+             printf("%c",(char)s);
+        }
+
+    }

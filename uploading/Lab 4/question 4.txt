@@ -1,0 +1,10 @@
+//q4
+    char x;
+    printf("enter the character : ");
+    x = getch();
+    int s = (int)x;
+    if((s >=65 && s<=90) || (s>=97 && s<=122)){
+        printf("normal character \n");
+    }else{
+        printf("extended key");
+    }

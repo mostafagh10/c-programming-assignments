@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //q21
+    int number;
+    printf("enter the number");
+    scanf("%d",&number);
+    int z= number*2;
+    int z2 = 0;
+    if(number <= 1){
+        printf("enter number bigger than 1 \n");
+    }
+    else{
+    for(int i=1 ; i<=number ; i++){
+        for(int k=1 ; k<=i-1 ; k++){
+            printf(" ");
+        }
+        printf("*");
+        z = z-2;
+        int zz=z;
+        while(zz!= 0){
+            printf(" ");
+            zz--;
+        }
+        printf("*");
+
+        printf("\n");
+    }
+
+    for(int i=number ; i<=number ; i++){
+        for(int k=1 ; k<=i-1 ; k++){
+            printf(" ");
+        }
+        printf("**");
+        printf("\n");
+    }
+
+
+    for(int i=2 ; i<=number ; i++){
+        for(int k=1 ; k<=number-i ; k++){
+            printf(" ");
+        }
+        printf("*");
+        z2 = z2+2;
+        int zz= z2;
+        for(int a=1 ; a<=zz ; a++){
+            printf(" ");
+        }
+        printf("*");
+        printf("\n");
+    }
+    }
+
+
+
+    return 0;
+}

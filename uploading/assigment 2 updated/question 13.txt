@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+float printfloor(float n1,float n2){
+    return n1+n2;
+}
+int main()
+{
+    //q13
+    float num1,num2;
+    printf("enter the 2 numbers : ");
+    scanf("%f %f",&num1,&num2);
+    float result2 = printfloor(num1,num2);
+    printf("the result = %d \n",(int)result2);
+
+    return 0;
+}

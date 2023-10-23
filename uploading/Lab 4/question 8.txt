@@ -1,0 +1,13 @@
+char original[20],copy[20];
+    printf("enter the original string : ");
+    gets(original);
+    char arr[20];
+    int flag;
+    for(int i=0 ; i<20 || flag!= 1 ; i++){
+        if(original[i] != '\0'){
+            copy[i] = original[i];
+        }else{
+            flag = 1;
+        }
+    }
+    printf("the copy string = %s \n",copy);

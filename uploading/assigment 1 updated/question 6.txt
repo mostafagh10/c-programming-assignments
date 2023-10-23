@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //q6
+    int x,y;
+    printf("enter the two numbers : ");
+    scanf("%d %d",&x,&y);
+    if(x == y){
+        printf("the two numbers are equal each other \n");
+    }else{
+        printf("the two numbers are not equal each other \n");
+        if(x > y){
+            printf("number %d is higher than %d \n",x,y);
+        }else{
+            printf("number %d is higher than %d \n",y,x);
+        }
+    }
+
+
+
+    return 0;
+}

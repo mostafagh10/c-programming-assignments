@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //q10
+    int x,y;
+    printf("enter the two numbers : ");
+    scanf("%d %d",&x,&y);
+    char z;
+    printf("enter the sign operation : ");
+    scanf(" %c",&z);
+    switch(z){
+    case '+':
+        printf("the sum : %d \n",x+y);
+        break;
+     case '-':
+        printf("the sub : %d \n",x-y);
+        break;
+     case '*':
+        printf("the multiplication : %d \n",x*y);
+        break;
+     case '/':
+        printf("the division : %d \n",x/y);
+        break;
+     default:
+        printf("wrong sign operation ...");
+        break;
+    }
+
+
+
+    return 0;
+}
+

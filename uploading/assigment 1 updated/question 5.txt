@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //q5
+    char x;
+    printf("enter the character : ");
+    scanf("%c",&x);
+    printf("ASCII number of %c is %d \n",x,x);
+
+
+
+    return 0;
+}

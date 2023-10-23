@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //q3
+    int degree;
+    printf("enter the degree in celsius  : ");
+    scanf("%d",&degree);
+    printf("the temperature in fahrenheit : %f \n",(float)degree*1.8+32);
+
+
+
+    return 0;
+}

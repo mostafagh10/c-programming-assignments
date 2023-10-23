@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //q1
+    int x,y;
+    printf("enter the two numbers : ");
+    scanf("%d %d",&x,&y);
+    printf("the result = %d \n",((x+y)*3)-10);
+
+
+
+    return 0;
+}

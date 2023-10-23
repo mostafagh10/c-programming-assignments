@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //q19
+    int number;
+    printf("enter the number");
+    scanf("%d",&number);
+    for(int i=1 ; i<=number ; i++){
+        for(int j=0 ; j<=number-i ; j++){
+                printf("*");
+        }
+        printf("\n");
+    }
+
+
+
+    return 0;
+}

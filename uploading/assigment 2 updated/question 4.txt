@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+void makeoperation(int num1,int num2,char sign){
+     switch(sign){
+    case '+':
+        printf("the sum = %d \n",num1+num2);
+        break;
+    case '-':
+        printf("the sub = %d \n",num1-num2);
+        break;
+    case '*':
+        printf("the multiple = %d \n",num1*num2);
+        break;
+    case '/':
+        printf("the divide = %d \n",num1/num2);
+        break;
+    default:
+        printf("wrong operation !!\n");
+        break;
+    }
+}
+int main()
+{
+    //q4
+    int x,y;
+    char z;
+    printf("enter the numbers : ");
+    scanf("%d %d",&x,&y);
+    printf("enter the operation sign : ");
+    scanf(" %c",&z);
+    makeoperation(x,y,z);
+
+
+    return 0;
+}

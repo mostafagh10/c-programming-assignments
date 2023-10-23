@@ -1,0 +1,6 @@
+char firstname[20],lastname[20];
+    printf("enter the firstname : ");
+    gets(firstname);
+    printf("enter the lastname : ");
+    gets(lastname);
+    printf("the fullname = %s %s \n",firstname,lastname);

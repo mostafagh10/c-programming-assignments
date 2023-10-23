@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //q13
+    int x;
+    printf("enter the number : ");
+    scanf("%d",&x);
+    int flag;
+    if(x < 0 ){
+        printf("this is negative number ... enter positive one");
+    }else if(x == 0 || x == 1 || x == -1){
+        printf("not prime number \n");
+    }
+    else{
+        for(int i=2 ; i<= x/2 ; i++){
+            if(x % i == 0){
+                flag = 1;
+                break;
+            }
+        }
+        if(flag == 0){
+            printf("prime number \n");
+        }else{
+            printf("not prime number \n");
+        }
+    }
+
+
+
+    return 0;
+}

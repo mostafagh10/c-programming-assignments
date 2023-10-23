@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+void convertchar(char x){
+    int s = (int)x;
+    printf("%c \n",s-32);
+}
+int main()
+{
+    //q6
+    char c;
+    printf("enter the character : ");
+    scanf("%c",&c);
+    convertchar(c);
+
+    return 0;
+}
