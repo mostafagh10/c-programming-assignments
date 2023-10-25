@@ -1,0 +1,96 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+#include <dos.h>
+#include <dir.h>
+ void gotoxy(int x,int y)
+ {
+   COORD coord={0,0};
+   coord.X=x;
+   coord.Y=y;
+   SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),coord);
+ }
+int main()
+{
+    char sintence[200];
+    char x;
+    int flag=0,size=0;
+    for(int i=0 ; flag!=1 ; i++){
+        x = getch();
+        if(x == 13){
+            flag = 1;
+        }else if(x == -32){
+            x = getch();
+
+                gotoxy(size,0);
+
+        }
+        else{
+            sintence[i] = x;
+            printf("%c",sintence[i]);
+            size++;
+        }
+    }
+    system("cls");
+    for(int j=0 ; j<size ; j++){
+        printf("%c",sintence[j]);
+    }
+    int col = size;
+    gotoxy(col,0);
+    for(int i=0 ; ; i++){
+        x = getch();
+        if(x == -32){
+            x = getch();
+            if(x == 75){
+                if(col < 0){
+                    col = 0;
+                }else{
+                col--;
+                }
+                gotoxy(col,0);
+            }else if(x == 77){
+                col++;
+                gotoxy(col,0);
+            }if(col > size){
+               col=size;
+               gotoxy(size,0);
+            }
+        }else if(x == 13){
+        system("cls");
+        for(int j=0 ; j<size ; j++){
+        printf("%c",sintence[j]);
+        }
+        }else if(x == 8){
+        for(int j=col;j<size ; j++){
+            sintence[j] = sintence[j+1];
+        }
+        size--;
+        system("cls");
+        for(int j=0 ; j<size ; j++){
+        printf("%c",sintence[j]);
+        }
+        gotoxy(col,0);
+        }
+        else{
+        if(col == size){
+           sintence[size] = x;
+           size++;
+           col++;
+           gotoxy(col,0);
+        }else{
+        for(int j=size;j>col-1 ; j--){
+            sintence[j+1] = sintence[j];
+        }
+        sintence[col] = x;
+        col++;
+        size++;
+        }
+        system("cls");
+        for(int j=0 ; j<size ; j++){
+        printf("%c",sintence[j]);
+        }
+        gotoxy(col,0);
+        }
+    }
+    return 0;
+}
